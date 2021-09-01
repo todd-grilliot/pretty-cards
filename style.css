@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*  font-family: 'Lobster', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: Montserrat*/
+
+h1{
+    font-family: 'Lobster';
+    text-align: center;
+}
+h2{
+    font-family: 'Lobster';
+    font-size: 25px;
+    color: #fff;
+    margin: 0 auto 0 auto;
+    position: absolute 0;
+}
+p{
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #fff;
+    width: 230px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+button{
+    font-family: 'Montserrat';
+    cursor: pointer;
+    text-align: center;
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 40px auto 40px auto;
+    color: white;
+    background-color: black;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.content{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    z-index: 1;
+    transform: translateY(70%);
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    transition: transform 0.5s ease;
+    pointer-events: none;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+}
+.spacer{
+    margin:auto;
+}
+.cards{
+    position: relative;
+    margin: 20px;
+    background-color: aquamarine;
+    min-height: 375px;
+    min-width: 250px;
+    background-size: cover;
+    box-shadow: 3px 3px 6px 2px #888888;
+}
+.cards::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    /*background-color: #0c0954;*/
+    opacity: 0.1;
+    transition: opacity 0.5s ease;
+}
+#card1{
+    background-image: url(/images/mount.jpg);
+}
+#card2{
+    background-image: url(/images/desert.jpg);
+}
+#card3{
+    background-image: url(/images/beach.jpg);
+}
+#card4{
+    background-image: url(/images/space.jpg);
+}
+
+.show{
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.6s ease-in;
+}
+.up{
+    transform: translateY(30%)
+}
+.darken::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
