@@ -75,16 +75,16 @@ button{
     transition: opacity 0.5s ease;
 }
 #card1{
-    background-image: url(/images/mount.jpg);
+    background-image: url(images/mount.jpg);
 }
 #card2{
-    background-image: url(/images/desert.jpg);
+    background-image: url(images/desert.jpg);
 }
 #card3{
-    background-image: url(/images/beach.jpg);
+    background-image: url(images/beach.jpg);
 }
 #card4{
-    background-image: url(/images/space.jpg);
+    background-image: url(images/space.jpg);
 }
 
 .show{
